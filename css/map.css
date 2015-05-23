@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.map_container {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
+	color: #FFF;
+	padding: 0px;
+	float: right;
+	height: 325px;
+	width: 760px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	background-image: url(../images/template/BioMap.jpg);
+	background-position: 0px 0px;
+	position: relative;
+}
+.map_container a.dot {
+	display: block;
+	height: 20px;
+	width: 20px;
+	background-image: url(../images/template/dots.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	cursor: pointer;
+	position: absolute;
+	
+}
+
+/*----- When the pointer hovers over the red dot, the image will shift down 20px and display the yellow dot--*/
+.map_container a.dot:hover {
+	background-position: 0px -20px;
+}
+.map_container a.dot.selected {
+	background-position: 0px -40px;
+}
+
+.map_container .form_continent {
+	position: absolute;
+	left: 283px;
+	top: 280px;
+}
+.map_container .detail_container {
+	position: absolute;
+	height: 214px;
+	width: 216px;
+	left: 1px;
+	top: 108px;
+}
+.map_container .city_detail {
+	width: 173px;
+	padding-top: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 12px;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #a9b5c8;
+	border-left-color: #a9b5c8;
+	position: absolute;
+	top: 2px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	height: 63px;
+	left: 1px;
+}
+.map_container .clear_both {
+	clear: both;
+}
+.map_container .city_photo {
+	float: left;
+	margin-top: 0px;
+	margin-right: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	border: 1px solid #FFF;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: 0px 5px 3px #4e5d74;
+	-moz-box-shadow: 0px 5px 3px #4e5d74;
+	-webkit-box-shadow: 0px 5px 3px #4e5d74;
+}
+.map_container .city_info {
+	float: left;
+	width: 130px;
+}
+.map_container .city_info h2 {
+	font-size: 18px;
+	margin: 0px;
+}
+.map_container .city_info h3 {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #2c3748;
+	letter-spacing: 4px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 12px;
+	margin-left: 0px;
+}
+.map_container .city_info p {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 12px;
+	margin-left: 0px;
+}
+.city_detail_container {
+	display: none;
+}

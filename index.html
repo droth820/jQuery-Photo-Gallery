@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Disney Vacation Photo Gallery</title>
+<link href="css/gallery.css" rel="stylesheet" type="text/css" />
+
+<link href="includes/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+
+<script>
+$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+			</script>
+</head>
+
+<body>
+<div class="page_container">
+	<div class="gallery_credit">
+	<h1>Disney Trip  October 2012</h1></div><!--Name for gallery-->
+    <div class="gallery_type">
+    <h2>Photo Gallery</h2></div>
+    <div class="clear_both"></div>
+    <div class="gallery_top"></div><!--end of gallery_top-->
+    <div class="gallery_content">
+    	<div class="gallery_thumbnails">
+        <a href="images/buzz1_fullsize.jpg"title="To infinity and beyond!"><img src="images/buzz1_thumbnail.jpg" alt="Buzz Light Year" height="56" width="75"/></a>
+        <a href="images/cabinView_fullsize.jpg"title="About to get REALLY wet!"><img src="images/cabinView_thumbnail.jpg" alt="Grizzly Rapids" height="56" width="75"/></a>
+        <a href="images/dino_fullsize.jpg"title="At the parade"><img src="images/dino_thumbnail.jpg" alt="Dinosaur" height="56" width="75"/></a>
+        <a href="images/donkey_fullsize.jpg"title="Donkey!! Isn't he from shrek?"><img src="images/donkey_thumbnail.jpg" alt="Donkey" height="56" width="75"/></a>
+        <a href="images/fallCar_fullsize.jpg"title="The vegetable wagon"><img src="images/fallCar_thumbnail.jpg" alt="Fall Car" height="56" width="75"/></a>    
+        <a href="images/fox_fullsize.jpg"title=" Brier Fox!"><img src="images/fox_thumbnail.jpg" alt="Brier Fox" height="56" width="75"/></a>
+        <a href="images/greenFairy_fullsize.jpg"title="Green Fairy"><img src="images/greenFairy_thumbnail.jpg" alt="Green Fairy" height="56" width="75"/></a>
+        <a href="images/pinkFairy_fullsize.jpg"title="Pink Fairy"><img src="images/pinkFairy_thumbnail.jpg" alt="Pink Fairy" height="56" width="75"/></a>
+        <a href="images/grinch_fullsize.jpg"title="Did the Grinch visit the haunted house?"><img src="images/grinch_thumbnail.jpg" alt="Haunted Mansion" height="56" width="75"/></a>
+        <a href="images/mickeyHat_fullsize.jpg"title="Hey buddy, this is my show."><img src="images/mickeyHat_thumbnail.jpg" alt="Mickey Mouse" height="56" width="75"/></a>
+        <a href="images/mickeyParade_fullsize.jpg"title="Another parade"><img src="images/mickeyParade_thumbnail.jpg" alt="Mickey Mouse" height="56" width="75"/></a>
+        <a href="images/parade1_fullsize.jpg"title="And another parade"><img src="images/parade1_thumbnail.jpg" alt="Parade" height="56" width="75"/></a>
+        <a href="images/parade2_fullsize.jpg"title="And another"><img src="images/parade2_thumbnail.jpg" alt="Another parade" height="56" width="75"/></a>
+        <a href="images/pixarPlay_fullsize.jpg"title="Can't get enough of those Disney parades"><img src="images/pixarPlay_thumbnail.jpg" alt="Pixar parade" height="56" width="75"/></a>
+        <a href="images/pumpkins_fullsize.jpg"title="Back at the Haunted Mansion"><img src="images/pumpkins_thumbnail.jpg" alt="Pumpkin at Haunted Mansion" height="56" width="75"/></a>
+        <a href="images/rabbits_fullsize.jpg"title="Spooky rabbits!"><img src="images/rabbits_thumbnail.jpg" alt="Haunted Mansion rabbits" height="56" width="75"/></a>
+        <a href="images/redTuneCar_fullsize.jpg"title="Red tune car"><img src="images/redTuneCar_thumbnail.jpg" alt="Red Car" height="56" width="75"/></a>
+        <a href="images/riverRapids_fullsize.jpg"title="Grizzly Rapids"><img src="images/riverRapids_thumbnail.jpg" alt="Grizzly Rapids" height="56" width="75"/></a>
+        <a href="images/riverRun_fullsize.jpg"title="Back at Grizzly River Rapids or whatever it's name is"><img src="images/riverRun_thumbnail.jpg" alt="Grizzly Rapids" height="56" width="75"/></a>
+        <a href="images/splashMtn1_fullsize.jpg"title="Back at Splash Mountain"><img src="images/splashMtn1_thumbnail.jpg" alt="Splash Mountain" height="56" width="75"/></a>
+        <a href="images/thundermountain_fullsize.jpg"title="Choo choo!"><img src="images/thundermountain_thumbnail.jpg" alt="Thunder Mountain RR" height="56" width="75"/></a>
+        <a href="images/thunderRanch_fullsize.jpg"title="At Thunder Ranch"><img src="images/thunderRanch_thumbnail.jpg" alt="Thunder Ranch" height="56" width="75"/></a>
+        <a href="images/walkers_fullsize.jpg"title="More fun at the parade!"><img src="images/walkers_thumbnail.jpg" alt="Parade walkers" height="56" width="75"/></a>
+       <div class="clear_both"></div>
+    </div><!--end of gallery_thumbnails-->
+    <div class="gallery_preview"></div><!--end of gallery_preview-->
+    <div class="clear_both"></div>
+    <div class="gallery_contact"><a href="mailto:rothd@cox.net" class="contactlink">Contact Me</a></div><!--containd email address on left side under the thumbnails-->
+    <div class="gallery_caption"></div><!--caption floats on right side under the preview-->
+    <div class="clear_both"></div>
+    <div class="gallery_preload_area"></div><!--Jquery will lock on to this div to pre load all of the images--> 
+   </div><!--end of gallery_content area-->
+   <div class="gallery_bottom"></div><!--end of gallery_bottom area-->
+   
+   </div><!--end of page_container-->  
+   <script type="text/javascript" src="includes/jquery-1.5.min.js"></script>
+<script type="text/javascript" src="includes/farinspace/jquery.imgpreload.js"></script>
+<script type="text/javascript" src="includes/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="includes/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="includes/gallery.js"></script>  
+</body>
+</html>
